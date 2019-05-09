@@ -6,7 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require froala_editor.min.js
 //= require monologue/bootstrap/bootstrap.min
 //= require monologue/bootstrap/bootstrap-datepicker
 //= require monologue/bootstrap/bootstrap-datepicker-fr
