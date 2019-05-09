@@ -1,0 +1,8 @@
+<% unless Monologue::Config.twitter_username.nil? %>
+  <%= sidebar_section_for(t(".title")) do %>
+    <ul id="latest_tweets">
+      <li id="tweet_template" style="display:none;">{{text}}</li>
+    </ul>
+    <a class="twitter-timeline" data-tweet-limit="3" href="https://twitter.com/<%= Monologue::Config.twitter_username %>">Tweets by <%= Monologue::Config.twitter_username %></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <% end %>
+<% end %>
