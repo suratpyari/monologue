@@ -1,5 +1,6 @@
 class Monologue::User < ActiveRecord::Base
   has_many :posts
+  has_many :assets
 
   has_secure_password
 

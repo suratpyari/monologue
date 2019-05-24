@@ -13,6 +13,7 @@ Monologue::Engine.routes.draw do
     resources :sessions
     resources :posts
     resources :users
+    resources :assets
     get "comments" => "comments#show", as: "comments"
 
     match "/post/preview"=>"posts#preview", :as=>"post_preview", :via => [:put, :post]

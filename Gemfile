@@ -16,7 +16,7 @@ gemspec
 
 group :development, :test do
   gem "thin"
-  gem 'rails', '= 4.2.7'
+  gem 'rails', '= 5.2.3'
   gem 'responders', '~> 2.0'
   gem 'pry'
 
@@ -28,4 +28,5 @@ end
 
 gem 'coveralls', require: false
 gem 'pg'
+gem "wysiwyg-rails"
 gem 'turbolinks'

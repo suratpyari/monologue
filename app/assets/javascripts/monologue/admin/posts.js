@@ -24,7 +24,6 @@ $(document).ready (function(){
             var doc = iframe.document;
          }
 
-         $("#post_content").froalaEditor(); // update textarea with CKEDITOR content.
          $.post(el.attr("data-url"), $("form").serialize(), function(data) {
             doc.open();
             doc.writeln(data);
