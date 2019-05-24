@@ -1,5 +1,4 @@
 require "truncate_html"
-require "ckeditor"
 require "select2-rails"
 require "jquery-rails"
 require "sass-rails"
@@ -18,9 +17,8 @@ module Monologue
 
     initializer 'monologue.assets.precompile' do |app|
       app.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+      app.config.assets.precompile += %w(rails_admin/custom/theming.css rails_admin/custom/ui.js)
       app.config.assets.precompile += %w[
-        monologue/admin/ckeditor-config.js
-        ckeditor/*
         *.eot* *.woff *.ttf
       ]
     end

@@ -21,7 +21,8 @@ Gem::Specification.new do |s|
   s.add_dependency "truncate_html"
   s.add_dependency "jquery-rails"
   s.add_dependency 'rails-i18n'
-  s.add_dependency "ckeditor",'~> 5.0.0'
+  s.add_dependency 'wysiwyg-rails'
+  s.add_dependency 'font-awesome-sass'
   s.add_dependency 'select2-rails'
   s.add_dependency "sass-rails"
   s.add_dependency "responders"
